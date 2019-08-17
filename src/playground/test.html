@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="view" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <title>test</title>
+</head>
+
+<body>
+    <h1 class="text">test</h1>
+    <div id="root"></div>
+    <div class="main">
+        <div class="one_two">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div class="three"></div>
+    </div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        console.log('hello');
+        document.getElementById('root').innerText = "hello";
+        const squareArrow = (x) => x * x;
+        console.log(squareArrow(7));
+
+        const multiplier = {
+            numbers: [10, 20, 30],
+            multiplyBy: 3,
+            multiply() {
+                return this.numbers.map((number) => number * this.multiplyBy);
+            }
+        };
+        console.log(multiplier.multiply());
+
+    </script>
+    <script type="text/javascript" src="./test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.main {
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one_two{
+    display: flex;
+    flex-direction: row;
+}
+
+.one{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: #ff4232;
+    position: relative;
+    left: 15px;
+    opacity: 0.9;
+}
+
+.two{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: #049deb;
+    position: relative;
+    right: 15px;
+    opacity: 0.8;
+}
+
+.three{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: #fffe03;
+    position: relative;
+    bottom: 40px;
+    opacity: 0.7;
+}
+
+.text {
+    text-align: center;
+    text-shadow: rgba(0,0,255,1) -1px -2px 0.5em
+}
