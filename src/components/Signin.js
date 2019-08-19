@@ -24,9 +24,9 @@ export default class Signin extends React.Component {
             <div>
                 <Error error={this.state.error} />
                 <form onSubmit={this.handleOnSubmit}>
-                    <label>Email: </label>
+                    <label>ایمیل :</label>
                     <input type="email" name="email" /><br />
-                    <label>Password: </label>
+                    <label>پسورد :</label>
                     <input type="text" name="password" /><br />
                     <button>Login</button>
                 </form>

@@ -1,0 +1,17 @@
+@import 'mixins';
+@import 'variables';
+
+html {
+    direction: rtl;
+   @include box-sizing(border-box);
+   font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $font-primary;
+}
+
+*, *:after, *:before {
+    @include box-sizing(inherit);
+}

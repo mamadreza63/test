@@ -1,0 +1,4 @@
+@function font-local-name($name) {
+    $local-name: str-slice($name, 1, 1) + ' ' + str-slice($name, 2);
+    @return $local-name;
+}

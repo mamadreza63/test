@@ -1,0 +1,19 @@
+@import 'functions';
+
+@mixin box-sizing($size) {
+    -webkit-box-sizing: $size;
+    -moz-box-sizing: $size;
+    box-sizing: $size;
+}
+
+@mixin font-face($name) {
+    @font-face {
+        font-family: '#{$name}';
+        src:    local(font-local-name($name)),
+                url('/fonts/#{$name}.eot');   /* IE9 Compat Modes */
+        src:    local(font-local-name($name)),
+                url('/fonts/#{$name}.eot?#iefix') format('embedded-opentype'),  /* IE6-IE8 */
+                url('/fonts/#{$name}.woff') format('woff'),     /* Pretty Modern Browsers */
+                url('/fonts/#{$name}.ttf') format('truetype');  /* Safari, Android, iOS */
+    }
+}

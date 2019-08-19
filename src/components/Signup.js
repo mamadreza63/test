@@ -25,11 +25,11 @@ export default class Signup extends React.Component {
             <div>
                 <Error error={this.state.error} />                
                 <form onSubmit={this.handleOnSubmit}>
-                    <label>Email: </label>
+                    <label className="font-BYekan">ایمیل: </label>
                     <input type="email" name="email" /><br />
-                    <label>Password: </label>
+                    <label>پسورد: </label>
                     <input type="text" name="password" /><br />
-                    <label>Password Confirm: </label>
+                    <label>تکرار پسورد: </label>
                     <input type="text" name="passwordConfirm" /><br />
                     <button>Signup</button>
                 </form>
